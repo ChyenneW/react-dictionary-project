@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ApiResults from "./ApiResults";
 
 import "./Dictionary.css";
 
@@ -47,6 +48,7 @@ export default function Dictionary() {
           <input type="submit" value="Search" className="searchBarButton" />
         </form>
         <div className="keyword">{keyword}</div>
+        <ApiResults results={keyword} />
       </div>
     );
   }
