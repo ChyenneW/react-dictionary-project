@@ -2,6 +2,20 @@
   margin-right: 5px;
 }
 
+.searchBarButton {
+  background: #5cc1b3;
+  border: 1px solid #5cc1b3;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 1px rgb(92 193 179 / 20%);
+  transition: all 200ms ease-in-out;
+  justify-content: center;
+}
+
+.searchBarButton:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
 .keyword {
   font-size: 50px;
   margin: 10px;

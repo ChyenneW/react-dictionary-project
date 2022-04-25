@@ -1,0 +1,29 @@
+.partOfSpeech {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.partOfSpeech:hover {
+  text-decoration: underline;
+}
+
+.definitions {
+  text-align: left;
+  margin: 15px;
+  margin-bottom: -10px;
+}
+
+.examplesHeading {
+  text-align: left;
+  margin-top: 35px;
+}
+
+.examplesHeading:hover {
+  text-decoration: underline;
+}
+
+.examples {
+  text-align: left;
+  margin: 15px;
+  margin-bottom: -10px;
+}

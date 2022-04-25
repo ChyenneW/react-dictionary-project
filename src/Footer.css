@@ -8,10 +8,11 @@ footer {
 
 .footerLink {
   color: #5cc1b3;
+  text-decoration: none;
 }
 
 .footerLink:hover {
   font-size: 20px;
-  text-decoration: dotted;
+  text-decoration: underline;
   cursor: pointer;
 }

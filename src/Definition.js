@@ -1,12 +1,13 @@
 import React from "react";
 
+import "./Definition.css";
+
 export default function Definition(props) {
   console.log(props.meaning);
 
   return (
     <div>
-      <h4>{props.meaning.partOfSpeech}</h4>
-
+      <h3 className="partOfSpeech">{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index} className="definitions">
@@ -16,11 +17,17 @@ export default function Definition(props) {
           </div>
         );
       })}
-      <p className="examples">
-        <em>{props.meaning.definitions[0].example}</em>
-      </p>
+
+      <h3 className="examplesHeading">Examples</h3>
+      {props.meaning.definitions.map(function (example, index) {
+        return (
+          <div className="examples" key={index}>
+            <p>
+              <em>{example.example}</em>
+            </p>
+          </div>
+        );
+      })}
     </div>
   );
 }
-
-// documentation: <p>{props.meaning.definitions[0].definition}</p>
