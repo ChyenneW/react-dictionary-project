@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Meanings from "./Meanings";
 
 export default function ApiResults(props) {
   let [loaded, setLoaded] = useState("unloaded");
@@ -19,6 +20,7 @@ export default function ApiResults(props) {
     return (
       <div>
         <div className="phonetics">{wordData.phonetics}</div>
+        <Meanings meanings={wordData.meanings} />
       </div>
     );
   } else {
