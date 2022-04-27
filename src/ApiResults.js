@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Meanings from "./Meanings";
+import Phonetics from "./Phonetics";
 
 export default function ApiResults(props) {
   let [loaded, setLoaded] = useState("unloaded");
@@ -11,7 +12,8 @@ export default function ApiResults(props) {
     setLoaded("loaded");
 
     setData({
-      phonetics: results.data[0].phonetic,
+      phoneticWord: results.data[0].phonetic,
+      phoneticAudio: results.data[0].phonetics,
       meanings: results.data[0].meanings,
     });
   }
@@ -19,7 +21,8 @@ export default function ApiResults(props) {
   if (loaded === "loaded") {
     return (
       <div>
-        <div className="phonetics">{wordData.phonetics}</div>
+        <div className="phonetics">{wordData.phoneticWord}</div>
+        <Phonetics audio={wordData.phoneticAudio} />
         <Meanings meanings={wordData.meanings} />
       </div>
     );
