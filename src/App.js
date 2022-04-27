@@ -3,6 +3,7 @@ import Footer from "./Footer";
 
 import "./App.css";
 import Dictionary from "./Dictionary";
+import Thesaurus from "./Thesaurus";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <h1>Words are fun!!</h1>
       </header>
       <Dictionary />
+      <Thesaurus />
       <Footer />
     </div>
   );
