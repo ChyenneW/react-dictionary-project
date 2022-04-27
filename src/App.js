@@ -16,7 +16,7 @@ function App() {
           <Link to={"/"} className="navigationLinks">
             HOME
           </Link>
-          <Link to={"/dicionary"} className="navigationLinks">
+          <Link to={"/dictionary"} className="navigationLinks">
             DICTIONARY
           </Link>
           <Link to={"/thesaurus"} className="navigationLinks">
