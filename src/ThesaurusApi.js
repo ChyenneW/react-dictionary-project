@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Antonyms from "./Antonyms";
 import Synonyms from "./Synonyms";
+import "./Thesaurus.css";
 
 export default function ApiResults(props) {
   let [loaded, setLoaded] = useState("unloaded");
@@ -16,7 +17,7 @@ export default function ApiResults(props) {
   if (loaded === "loaded") {
     return (
       <div>
-        <h3>Antonyms</h3>
+        <h3 className="thesaurusHeadings">Antonyms</h3>
         {thesaurusWordData.map(function (thesaurusData, index) {
           return (
             <div key={index}>
@@ -25,12 +26,12 @@ export default function ApiResults(props) {
           );
         })}
 
-        <h3>Synonyms</h3>
+        <h3 className="thesaurusHeadings">Synonyms</h3>
         {thesaurusWordData.map(function (thesaurusData, index) {
           return (
-            <div key={index}>
+            <p key={index}>
               <Synonyms thesaurusData={thesaurusData} />
-            </div>
+            </p>
           );
         })}
       </div>

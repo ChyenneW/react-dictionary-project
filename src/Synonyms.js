@@ -1,4 +1,5 @@
 import React from "react";
+import "./Thesaurus.css";
 
 export default function Synonyms(props) {
   let thesaurus = props.thesaurusData;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ThesaurusApi from "./ThesaurusApi";
+import "./Thesaurus.css";
 
 export default function Thesaurus() {
   let [keyword, setKeyword] = useState("");

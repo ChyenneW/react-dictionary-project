@@ -18,6 +18,7 @@
 
 .keyword {
   text-transform: capitalize;
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: bold;
   margin: 10px;
 }

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #48494b;
 }
 
 .App-header {
@@ -10,4 +10,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.navigation {
+  text-align: right;
+}
+
+.navigationLinks {
+  color: #5cc1b3;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.navigationLinks:hover {
+  text-decoration: underline;
 }

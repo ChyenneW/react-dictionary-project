@@ -1,7 +1,9 @@
 .partOfSpeech {
+  font-size: 40px;
   text-align: left;
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
+  margin-bottom: -10px;
 }
 
 .partOfSpeech:hover {
@@ -12,11 +14,13 @@
   text-align: left;
   margin: 15px;
   margin-bottom: -10px;
+  font-size: 20px;
 }
 
 .examplesHeading {
   text-align: left;
-  margin-top: 35px;
+  margin-top: 40px;
+  font-size: 25px;
 }
 
 .examplesHeading:hover {

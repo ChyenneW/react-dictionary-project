@@ -1,0 +1,37 @@
+.keyword {
+  text-transform: capitalize;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.thesaurusHeadings {
+  font-size: 40px;
+  text-align: left;
+  text-transform: capitalize;
+  transition: all 200ms ease-in-out;
+  margin-bottom: -10px;
+  margin-left: 5px;
+}
+
+.thesaurusHeadings:hover {
+  text-decoration: underline;
+}
+
+.synonyms {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: -10px;
+  color: black;
+  opacity: 0.8;
+}
+
+.antonyms {
+  color: black;
+  opacity: 0.8;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: -10px;
+}

@@ -1,19 +1,20 @@
 import React from "react";
+import "./Thesaurus.css";
 
 export default function Antonyms(props) {
   let thesaurus = props.thesaurusData;
 
   return (
-    <div>
-      <div>
+    <p>
+      <p>
         {thesaurus.antonyms.map(function (antonym, index) {
           return (
-            <div key={index}>
-              <div className="antonyms">{antonym}</div>
-            </div>
+            <p key={index}>
+              <p className="antonyms">{antonym}</p>
+            </p>
           );
         })}
-      </div>
-    </div>
+      </p>
+    </p>
   );
 }

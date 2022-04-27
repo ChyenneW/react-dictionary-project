@@ -9,6 +9,7 @@ export default function Home() {
         <Link to={"/dictionary"} className="homeLinks">
           Dictionary
         </Link>
+
         <Link to={"/thesaurus"} className="homeLinks">
           Thesaurus
         </Link>

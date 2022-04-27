@@ -4,12 +4,12 @@ import "./Phonetics.css";
 export default function Phonetics(props) {
   let audioFiles = props.audio;
   return (
-    <div className="container audioPlayer">
-      <div className="row">
+    <div className="container">
+      <div className="row audioPlayer">
         {audioFiles.map(function (file, index) {
           return (
             <div key={index} className="col-4">
-              <audio controls src={file.audio}></audio>
+              <audio controls preload="auto" src={file.audio}></audio>
             </div>
           );
         })}
