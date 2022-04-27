@@ -9,6 +9,7 @@ footer {
 .footerLink {
   color: #5cc1b3;
   text-decoration: none;
+  transition: all 200ms ease-in-out;
 }
 
 .footerLink:hover {

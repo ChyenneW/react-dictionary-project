@@ -1,0 +1,12 @@
+.homeLinks {
+  color: #5cc1b3;
+  text-decoration: none;
+  border: 1px;
+  border-radius: 5px;
+  padding: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.homeLinks:hover {
+  text-decoration: underline;
+}
