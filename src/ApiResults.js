@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Meanings from "./Meanings";
 import Phonetics from "./Phonetics";
+import "./ApiResults.css";
 
 export default function ApiResults(props) {
   let [loaded, setLoaded] = useState("unloaded");

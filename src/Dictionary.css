@@ -17,6 +17,7 @@
 }
 
 .keyword {
+  text-transform: capitalize;
   font-size: 50px;
   margin: 10px;
 }

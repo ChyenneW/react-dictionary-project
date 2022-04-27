@@ -1,6 +1,7 @@
 .partOfSpeech {
   text-align: left;
   text-transform: capitalize;
+  transition: all 200ms ease-in-out;
 }
 
 .partOfSpeech:hover {
@@ -20,6 +21,8 @@
 
 .examplesHeading:hover {
   text-decoration: underline;
+  text-transform: capitalize;
+  transition: all 200ms ease-in-out;
 }
 
 .examples {
