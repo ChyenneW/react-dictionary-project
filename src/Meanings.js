@@ -1,4 +1,6 @@
 import React from "react";
+
+//Self-made components
 import Definition from "./Definition";
 
 export default function Meanings(props) {

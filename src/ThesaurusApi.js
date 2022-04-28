@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+
+//Self-made components
 import Antonyms from "./Antonyms";
 import Synonyms from "./Synonyms";
 import "./Thesaurus.css";

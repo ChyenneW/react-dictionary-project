@@ -1,31 +1,37 @@
 import React from "react";
 import { Routes, Route } from "react-router";
-import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
-import "./App.css";
+// Self-made components
+import Home from "./Home";
 import Dictionary from "./Dictionary";
 import Thesaurus from "./Thesaurus";
-import Home from "./Home";
-import { Link } from "react-router-dom";
+import Footer from "./Footer";
+
+// Styles
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="container navigation">
-        <div className="row">
-          <Link to={"/"} className="navigationLinks">
-            HOME
-          </Link>
-          <Link to={"/dictionary"} className="navigationLinks">
-            DICTIONARY
-          </Link>
-          <Link to={"/thesaurus"} className="navigationLinks">
-            THESAURUS
-          </Link>
-        </div>
+      <div className="row navigation">
+        <Link to={"/"} className=" col-1 navigationLinks">
+          HOME
+        </Link>
+        <Link to={"/dictionary"} className=" col-1 navigationLinks">
+          DICTIONARY
+        </Link>
+        <Link to={"/thesaurus"} className=" col-1 navigationLinks">
+          THESAURUS
+        </Link>
       </div>
       <header className="App-header">
-        <h1>Words are fun!!</h1>
+        <h1 className="quote">
+          "A word is dead when it is said some say. I say it just begins to live
+          that day"
+        </h1>
+        <small className="quoteAuthor">-Emiliy Dickinson</small>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />

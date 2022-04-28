@@ -1,5 +1,6 @@
 import React from "react";
 
+//Styles
 import "./Definition.css";
 
 export default function Definition(props) {

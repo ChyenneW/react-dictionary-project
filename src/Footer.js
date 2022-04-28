@@ -15,7 +15,7 @@ export default function Footer() {
         >
           Chyenne Williams
         </a>{" "}
-        and is
+        and is{" "}
         <a
           href="https://github.com/ChyenneW/react-dictionary-project"
           target="_blank"

@@ -4,6 +4,7 @@
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
   margin-bottom: -10px;
+  margin-top: 80px;
 }
 
 .partOfSpeech:hover {
@@ -33,4 +34,10 @@
   text-align: left;
   margin: 15px;
   margin-bottom: -10px;
+}
+
+@media (max-width: 550px) {
+  .definitions {
+    font-size: 15px;
+  }
 }

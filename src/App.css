@@ -12,16 +12,34 @@
   color: white;
 }
 
+.quote {
+  font-style: italic;
+}
+
+.quoteAuthor {
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
 .navigation {
   text-align: right;
+  justify-content: end;
 }
 
 .navigationLinks {
   color: #5cc1b3;
   text-decoration: none;
   padding: 5px;
+  margin: 20px;
+  font-size: 13px;
 }
 
 .navigationLinks:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+  .navigation {
+    justify-content: flex-start;
+  }
 }

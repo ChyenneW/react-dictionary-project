@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
+
+//Self-made components
 import ThesaurusApi from "./ThesaurusApi";
+
+//Styles
 import "./Thesaurus.css";
 
 export default function Thesaurus() {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Meanings from "./Meanings";
 import Phonetics from "./Phonetics";
+import PexelsApi from "./PexelsApi";
 import "./ApiResults.css";
 
 export default function ApiResults(props) {
@@ -25,6 +26,7 @@ export default function ApiResults(props) {
         <div className="phonetics">{wordData.phoneticWord}</div>
         <Phonetics audio={wordData.phoneticAudio} />
         <Meanings meanings={wordData.meanings} />
+        <PexelsApi keyword={props.results} />
       </div>
     );
   } else {

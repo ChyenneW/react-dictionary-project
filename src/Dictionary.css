@@ -1,5 +1,6 @@
 .searchBar {
   margin-right: 5px;
+  width: 350px;
 }
 
 .searchBarButton {
@@ -21,4 +22,10 @@
   font-size: 70px;
   font-weight: bold;
   margin: 10px;
+}
+
+@media (max-width: 550px) {
+  .searchBar {
+    max-width: 200px;
+  }
 }

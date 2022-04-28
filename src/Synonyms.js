@@ -1,4 +1,6 @@
 import React from "react";
+
+//Styles
 import "./Thesaurus.css";
 
 export default function Synonyms(props) {
