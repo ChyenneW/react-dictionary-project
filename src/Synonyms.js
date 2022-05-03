@@ -7,16 +7,14 @@ export default function Synonyms(props) {
   let thesaurus = props.thesaurusData;
 
   return (
-    <div>
-      <div>
-        {thesaurus.synonyms.map(function (synonym, index) {
-          return (
-            <div key={index}>
-              <div className="synonyms">{synonym}</div>
-            </div>
-          );
-        })}
-      </div>
+    <div className="row">
+      {thesaurus.synonyms.map(function (synonym, index) {
+        return (
+          <span key={index} className="col-4">
+            <span className=" synonyms">{synonym}</span>
+          </span>
+        );
+      })}
     </div>
   );
 }

@@ -13,6 +13,7 @@
 }
 
 .quote {
+  font-family: var(--secondary-font);
   font-style: italic;
 }
 

@@ -1,4 +1,5 @@
 .photosHeading {
+  font-family: var(--primary-font);
   font-size: 40px;
   margin-bottom: 15px;
 }

@@ -10,7 +10,6 @@ export default function PexelsApi(props) {
   let [photos, setPhotos] = useState(null);
 
   function handlePexelsData(request) {
-    console.log(request.data.photos);
     setPhotos(request.data.photos);
     setLoad("loaded");
   }

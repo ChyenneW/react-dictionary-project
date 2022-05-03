@@ -1,5 +1,8 @@
 import React from "react";
 
+//Self-made components
+import Example from "./Example";
+
 //Styles
 import "./Definition.css";
 
@@ -8,7 +11,7 @@ export default function Definition(props) {
 
   return (
     <div>
-      <div>
+      <div className="section">
         <h3 className="partOfSpeech">{props.meaning.partOfSpeech}</h3>
         {props.meaning.definitions.map(function (definition, index) {
           return (
@@ -20,17 +23,8 @@ export default function Definition(props) {
           );
         })}
       </div>
-      <div>
-        <h3 className="examplesHeading">Examples</h3>
-        {props.meaning.definitions.map(function (example, index) {
-          return (
-            <div className="examples" key={index}>
-              <p>
-                <em>{example.example}</em>
-              </p>
-            </div>
-          );
-        })}
+      <div className="section">
+        <Example examples={props.meaning.definitions} />
       </div>
     </div>
   );

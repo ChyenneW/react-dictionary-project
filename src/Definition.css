@@ -1,5 +1,7 @@
 .partOfSpeech {
   font-size: 40px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
   text-align: left;
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
@@ -19,9 +21,11 @@
 }
 
 .examplesHeading {
+  font-family: var(--secondary-font);
+  font-weight: bold;
   text-align: left;
   margin-top: 40px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .examplesHeading:hover {
@@ -33,7 +37,7 @@
 .examples {
   text-align: left;
   margin: 15px;
-  margin-bottom: -10px;
+  list-style: none;
 }
 
 @media (max-width: 550px) {

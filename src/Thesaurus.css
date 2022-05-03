@@ -1,16 +1,27 @@
 .keyword {
   text-transform: capitalize;
   font-size: 70px;
-  font-weight: bold;
   margin: 10px;
+}
+
+.section {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background-color: rgb(208, 244, 244);
+  border: solid 1px rgba(69, 69, 71, 0.2);
+  border-radius: 5px;
+  box-shadow: 12px 12px 2px 1px rgba(69, 69, 71, 0.2);
 }
 
 .thesaurusHeadings {
   font-size: 40px;
+  font-family: var(--secondary-font);
   text-align: left;
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
-  margin-bottom: -10px;
+  margin-bottom: 15px;
   margin-left: 5px;
 }
 
@@ -18,10 +29,14 @@
   text-decoration: underline;
 }
 
+.thesaurusText {
+  text-align: left;
+}
+
 .synonyms {
   font-size: 20px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 15px;
   margin-bottom: -10px;
   color: black;
   opacity: 0.8;
@@ -31,6 +46,7 @@
   color: black;
   opacity: 0.8;
   font-size: 20px;
+  margin-left: 15px;
   text-align: left;
   margin-left: 30px;
   margin-bottom: -10px;

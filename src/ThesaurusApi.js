@@ -7,35 +7,44 @@ import Synonyms from "./Synonyms";
 import "./Thesaurus.css";
 
 export default function ApiResults(props) {
+  console.log(props);
   let [loaded, setLoaded] = useState("unloaded");
   let [thesaurusWordData, setThesaurusWordData] = useState({});
 
   function getThesaurusData(results) {
     setLoaded("loaded");
-
     setThesaurusWordData(results.data[0].meanings);
+    console.log(results.data[0]);
   }
 
   if (loaded === "loaded") {
     return (
       <div>
-        <h3 className="thesaurusHeadings">Antonyms</h3>
-        {thesaurusWordData.map(function (thesaurusData, index) {
-          return (
-            <div key={index}>
-              <Antonyms thesaurusData={thesaurusData} />
-            </div>
-          );
-        })}
+        <div className="section">
+          <h3 className="thesaurusHeadings">Synonyms</h3>
+          <div className=" thesaurusText">
+            {thesaurusWordData.map(function (thesaurusData, index) {
+              return (
+                <p key={index}>
+                  <Synonyms thesaurusData={thesaurusData} />
+                </p>
+              );
+            })}
+          </div>
+        </div>
 
-        <h3 className="thesaurusHeadings">Synonyms</h3>
-        {thesaurusWordData.map(function (thesaurusData, index) {
-          return (
-            <p key={index}>
-              <Synonyms thesaurusData={thesaurusData} />
-            </p>
-          );
-        })}
+        <div className="section">
+          <h3 className="thesaurusHeadings">Antonyms</h3>
+          <div className="thesaurusText">
+            {thesaurusWordData.map(function (thesaurusData, index) {
+              return (
+                <div key={index}>
+                  <Antonyms thesaurusData={thesaurusData} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     );
   } else {

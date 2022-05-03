@@ -7,16 +7,14 @@ export default function Antonyms(props) {
   let thesaurus = props.thesaurusData;
 
   return (
-    <p>
-      <p>
-        {thesaurus.antonyms.map(function (antonym, index) {
-          return (
-            <p key={index}>
-              <p className="antonyms">{antonym}</p>
-            </p>
-          );
-        })}
-      </p>
+    <p className="row">
+      {thesaurus.antonyms.map(function (antonym, index) {
+        return (
+          <p key={index} className="col-4">
+            <p className="antonyms">{antonym}</p>
+          </p>
+        );
+      })}
     </p>
   );
 }
